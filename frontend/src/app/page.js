@@ -7,41 +7,40 @@ function Page() {
   return (
     <>
 
-    <div className='bg-white relative' >
-      <div className='md:h-[80vh] overflow-hidden text-black relative -top-9'>
-        <img className='w-full' src='/assets/hero.jpg' alt=''/>
+      <div className='bg-white relative' >
+        <div className='md:h-[80vh] overflow-hidden text-black relative -top-9'>
+          <img className='w-full' src='/assets/hero.jpg' alt='' />
+        </div>
+        {/* banner */}
+        <div className='text-yellow-600 absolute bottom-15 sm:bottom-20 left-4 sm:left-20 pr-3'>
+          <p className='text-3xl sm:text-5xl font-semibold sm:mb-5 '>Hope for a</p>
+          <p className='sm:mt-2'>Better Tommorow</p>
+          <p className='text-xs my-1 sm:my-5'>Empowering the Next Generation of Community and Global Leaders.</p>
+          <span><button className='px-5 py-2 bg-yellow-500 text-black text-xs rounded-[5px]'>Explore</button></span>
+        </div>
       </div>
-      <div className='text-white absolute  bottom-20 left-4 sm:left-20 pr-3'>
-        <p className='text-3xl sm:text-5xl font-semibold mb-5 '>Hope for a</p>
-        <p className='sm:mt-2'>Better Tommorow</p>
-        <p className='text-xs my-5'>Empowering the Next Generation of Community and Global Leaders.</p>
-        <span><button className='px-5 py-2 bg-yellow-500 text-black text-xs rounded-[5px]'>Explore</button></span>
-      </div>
-    </div>
 
 
       <div className='flex flex-col items-start px-5 md:flex-row bg-white md:justify-center md:py-3 md:pb-9 '>
 
         <div className='border w-full md:w-100 rounded-2xl overflow-hidden'>
-          <Image width={200} className='w-full h-full object-cover' height={200} src='/assets/about.jpg' alt=''/>
+          <Image width={200} className='w-full h-full object-cover' height={200} src='/assets/about.jpg' alt='' />
         </div>
 
         <div className='text-gray-500 grid justify-items-stretch py-5 mt-5 md:py-0 md:mt-0 text-sm md:ml-10 mb-8'>
           <p className='text-xl text-yellow-500'>About us</p>
           <p className='text-2xl mb-2 text-black '>We are on the Mission to:</p>
           <div className='ml-4'>
-            <i>1.Create a World Class School & a center of Excellence.</i><br/>
-            <i>2.Create Community & Global Leaders.</i><br/>
-            <i>3.Promote STEM Learning, Innovation & Entrepreneurship.</i><br/>
-            <i>4.Inculcate 21st Century Skills.</i><br/>
+            <i>1.Create a World Class School & a center of Excellence.</i><br />
+            <i>2.Create Community & Global Leaders.</i><br />
+            <i>3.Promote STEM Learning, Innovation & Entrepreneurship.</i><br />
+            <i>4.Inculcate 21st Century Skills.</i><br />
             <i>5.Nurture Upright Character through Islamic Values & Tarbiyah.</i>
           </div>
-          <button className='justify-self-end md:justify-self-start px-6 py-4 md:px-4 md:py-2 mt-5 bg-yellow-500 text-black text-xs rounded-[5px]'>Read More</button>
+          <button className='justify-self-center md:justify-self-start px-6 py-4 md:px-4 md:py-2 mt-5 bg-yellow-500 text-black text-xs rounded-[5px]'>Read More</button>
         </div>
 
       </div>
-
-
 
       <div className='bg-white px-4 py-5'>
         <div className='flex flex-col items-center text-sm text-gray-500 px-4'>
@@ -54,7 +53,7 @@ function Page() {
         <div className='md:flex justify-center gap-5 pt-12 md:py-6'>
 
           <div className='md:w-80 pb-10 rounded-2xl shadow-[gray_0_5px_25px_0]'>
-              <Image width={200} height={200} className='relative top-0 hover:-top-3 w-full transition-all duration-400 rounded-t-2xl ' src='/assets/card1.jpg' alt=''/>
+            <Image width={200} height={200} className='relative top-0 hover:-top-3 w-full transition-all duration-400 rounded-t-2xl ' src='/assets/card1.jpg' alt='' />
             <div className='text-sm text-gray-500 mt-5 ml-5'>
               <p className='text-xl font-semibold text-black'>Academics</p>
               <p>We provide an CBSE curriculum focusing on discussions, debates, outcome-based, and interdisciplinary learning.</p>
@@ -62,7 +61,7 @@ function Page() {
             </div>
           </div>
           <div className='md:w-80 pb-10 my-10 md:my-0 rounded-2xl shadow-[gray_0_5px_25px_0]'>
-              <Image width={200} height={200} className='relative top-0 hover:-top-3 w-full transition-all duration-400 rounded-t-2xl ' src='/assets/card2.jpg' alt=''/>
+            <Image width={200} height={200} className='relative top-0 hover:-top-3 w-full transition-all duration-400 rounded-t-2xl ' src='/assets/card2.jpg' alt='' />
             <div className='text-sm text-gray-500 mt-5 ml-5'>
               <p className='text-xl font-semibold text-black'>Residential Programme</p>
               <p>At Umeed Global School, we believe holistic development thrives in an immersive environment.</p>
@@ -70,7 +69,7 @@ function Page() {
             </div>
           </div>
           <div className='md:w-80 md:hidden lg:block pb-10 rounded-2xl shadow-[gray_0_5px_25px_0]'>
-              <Image width={200} height={200} className='relative top-0 hover:-top-3 transition-all duration-400 w-full rounded-t-2xl ' src='/assets/card3.jpg' alt=''/>
+            <Image width={200} height={200} className='relative top-0 hover:-top-3 transition-all duration-400 w-full rounded-t-2xl ' src='/assets/card3.jpg' alt='' />
             <div className='text-sm text-gray-500 mt-5 ml-5'>
               <p className='text-xl font-semibold text-black'>Innovation & Technology</p>
               <p>At Umeed Global School, we believe that innovation and scientific curiosity are the cornerstones of a progressive education system. </p>
@@ -81,13 +80,9 @@ function Page() {
         </div>
 
         <div className='flex justify-center'>
-            <button className='py-2 px-7 mt-5 md:mt-0 relative top-0 hover:-top-2 duration-400 cursor-pointer rounded-sm bg-yellow-500 text-black flex'><FaArrowAltCircleRight className='mr-1 mt-1' /> Read More</button>
+          <button className='py-2 px-7 mt-5 md:mt-0 relative top-0 hover:-top-2 duration-400 cursor-pointer rounded-sm bg-yellow-500 text-black flex'><FaArrowAltCircleRight className='mr-1 mt-1' /> Read More</button>
         </div>
       </div>
-
-
-
-
 
       <div className='justify-items-stretch bg-white py-5'>
         <div className='flex flex-col items-center'><p className='text-2xl text-black md:text-3xl'>Our Latest Features</p><p className='border border-yellow-500 w-30 md:w-50 mt-2'></p></div>
@@ -128,8 +123,6 @@ function Page() {
 
         <button className='justify-self-center py-2 px-7 relative top-0 hover:-top-2 cursor-pointer duration-300 text-xs rounded-sm bg-yellow-500 text-black flex'><FaArrowAltCircleRight className='mr-1 mt-1' /> Check Previous Mentions</button>
       </div>
-
-
 
     </>
   )

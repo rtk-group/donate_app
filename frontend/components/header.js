@@ -1,5 +1,4 @@
 "use client"
-
 import React from "react";
 import { usePathname } from "next/navigation";
 import { MdOutlineEmail } from "react-icons/md";
@@ -13,7 +12,6 @@ import { IoMenu } from "react-icons/io5";
 import { GiCrossMark } from "react-icons/gi";
 import { FaCaretDown } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
-
 import Link from "next/link";
 
 function Header() {
@@ -21,17 +19,17 @@ function Header() {
   const [show, setshow] = React.useState(false);
 
   // Track which item is open by its index (null means none are open)
-    const [openIndex, setOpenIndex] = React.useState(null);
-  
-    const togglelinks = (index) => {
-      // If clicking the already open item, close it. Otherwise open the clicked one
-      setOpenIndex(openIndex === index ? null : index);
-    };
+  const [openIndex, setOpenIndex] = React.useState(null);
 
-      const pathname = usePathname();
+  const togglelinks = (index) => {
+    // If clicking the already open item, close it. Otherwise open the clicked one
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const pathname = usePathname();
   const isActive = (path) => pathname === path;
-  
-  function closeboth(){
+
+  function closeboth() {
     // console.log('hello function')
     setOpenIndex(null)
     setshow(false);
@@ -82,13 +80,12 @@ function Header() {
               </div>
 
               <div className="w-full flex justify-end ">
-              <Link href={'/donate-us'}>
-                <button className="w-30 py-3 text-[10px] mr-6 lg:w-35 lg:text-[15px] rounded-[8px] bg-[#FFC20E] font-semibold relative top-0 hover:-top-2 transition-all duration-400 cursor-pointer">Donate Now</button>
-              </Link>
+                <Link href={'/donate-us'}>
+                  <button className="w-30 py-3 text-[10px] mr-6 lg:w-35 lg:text-[15px] rounded-[8px] bg-[#FFC20E] font-semibold relative top-0 hover:-top-2 transition-all duration-400 cursor-pointer">Donate Now</button>
+                </Link>
               </div>
 
             </div>
-
 
           </div>
 
@@ -97,7 +94,7 @@ function Header() {
               <ul className="flex gap-3">
                 <li className="relative before:content-[''] before:absolute before:w-0 before:h-0.5 before:bg-black before:bottom-0 before:left-0 hover:before:w-full before:transition-all before:duration-300">
                   <Link href={'/'}>Home</Link>
-                  </li>
+                </li>
 
                 {/* About page */}
                 <div className="group">
@@ -128,19 +125,19 @@ function Header() {
                     <div className=" text-xs text-gray-600 flex flex-col ">
                       <Link href={'managing-committi'} className="px-3 py-2 hover:text-black hover:bg-gray-300"><p>Managing Commitee</p></Link>
                       <Link href={'advisory-board'} className="px-3 py-2 hover:text-black hover:bg-gray-300"><p>Advisory Board</p></Link>
-                      <Link href={'teachers-house-partners'} className="px-3 py-2 hover:text-black hover:bg-gray-300"><p>Teachers & House Partners</p></Link>                      
+                      <Link href={'teachers-house-partners'} className="px-3 py-2 hover:text-black hover:bg-gray-300"><p>Teachers & House Partners</p></Link>
                     </div>
                   </div>
                 </div>
 
-                
+
                 {/* what we do page */}
                 <li className="relative before:content-[''] before:absolute before:w-0 before:h-0.5 before:bg-black before:bottom-0 before:left-0 hover:before:w-full before:transition-all before:duration-300">
                   <Link href={'/what-we-do'}>What we do</Link>
                 </li>
-              
-                  {/* Addimission page */}
-                  <div className="group ">
+
+                {/* Addimission page */}
+                <div className="group ">
                   <p className="cursor-pointer py-3 px-5 flex relative before:content-[''] before:absolute before:w-0 before:h-0.5 before:bg-black before:bottom-0 before:left-0 hover:before:w-full before:transition-all before:duration-300 ">Admission <FaCaretDown className="ml-2" /></p>
 
                   <div className="bg-gray-200 absolute z-3 left-140 top-15 group-hover:h-17 transition-all duration-500 h-0 overflow-hidden">
@@ -150,7 +147,6 @@ function Header() {
                     </div>
                   </div>
                 </div>
-                
 
               </ul>
               <ul className="flex gap-3">
@@ -168,55 +164,53 @@ function Header() {
             </div>
 
 
-          {/* side bar for mid screen */}
+            {/* side bar for mid screen */}
             <div className="lg:hidden sm:ml-7">
               <div onClick={() => setshow(!show)} className="w-9 p-[2px] md:rounded-[5px] text-black text-[42px] md:text-[30px] md:bg-[#F5F5F5]"><IoMenu className="sm:block md:hidden" /><IoMenu className={`${show ? 'hidden' : 'hidden md:block'}`} /><GiCrossMark className={show ? 'hidden md:block' : 'hidden'} /></div>
               <div className={`${show ? ' max-h-0 md:max-h-[705px]' : 'max-h-0'} overflow-hidden w-0 md:w-85 bg-red-300 mt-2 transition-all duration-300`} >
-                <h1 className="text-black text-sm bg-[#EEEEEE] px-6 py-2" onClick={()=>closeboth()}><Link href='/'>Home</Link></h1>
+                <h1 className="text-black text-sm bg-[#EEEEEE] px-6 py-2" onClick={() => closeboth()}><Link href='/'>Home</Link></h1>
                 <ul className="text-sm text-gray-700 bg-gray-100">
-                  <li onClick={()=>togglelinks(0)} className="flex gap-1">About <IoMdArrowDropdown className="text-xl" />
+                  <li onClick={() => togglelinks(0)} className="flex gap-1">About <IoMdArrowDropdown className="text-xl" />
                   </li>
-                  <div className={`${openIndex === 0 ? 'h-90 pt-2': 'h-0' } duration-300 overflow-hidden text-xs flex flex-col`}>
-                    <Link href={'/our-history'} onClick={()=>closeboth()} className={`${isActive('/our-history') ? 'bg-gray-300 text-black ' : ''} pl-7 pb-2`}>Our History</Link>
-                    <Link href={'/vision-mission'} onClick={()=>closeboth()} className={`${isActive('/vision-mission') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Vision, Mission & Principal</Link>
-                    <Link href={'/our-logo'} onClick={()=>closeboth()} className={`${isActive('/our-logo') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Our Logo</Link>
-                    <Link href={'/founder'} onClick={()=>closeboth()} className={`${isActive('/founder') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Founder & Message</Link>
-                    <Link href={'/about-trust'} onClick={()=>closeboth()} className={`${isActive('/about-trust') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>About Our Trust</Link>
-                    <Link href={'/infrastructure'} onClick={()=>closeboth()} className={`${isActive('/infrastructure') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Infrastructure</Link>
-                    <Link href={'/news'} onClick={()=>closeboth()} className={`${isActive('/news') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>news</Link>
-                    <Link href={'/future-plans'} onClick={()=>closeboth()} className={`${isActive('/future-plans') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Future Plans</Link>
-                    <Link href={'/our-partners'} onClick={()=>closeboth()} className={`${isActive('/our-partners') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Our Partners</Link>
-                    <Link href={'/annual-report'} onClick={()=>closeboth()} className={`${isActive('/annual-report') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Annual Report</Link>
-                    <Link href={'/faq'} onClick={()=>closeboth()} className={`${isActive('/faq') ? 'bg-gray-300 text-black ' : ''} pl-7 pt-2`}>FAQ</Link>
+                  <div className={`${openIndex === 0 ? 'h-90 pt-2' : 'h-0'} duration-300 overflow-hidden text-xs flex flex-col`}>
+                    <Link href={'/our-history'} onClick={() => closeboth()} className={`${isActive('/our-history') ? 'bg-gray-300 text-black ' : ''} pl-7 pb-2`}>Our History</Link>
+                    <Link href={'/vision-mission'} onClick={() => closeboth()} className={`${isActive('/vision-mission') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Vision, Mission & Principal</Link>
+                    <Link href={'/our-logo'} onClick={() => closeboth()} className={`${isActive('/our-logo') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Our Logo</Link>
+                    <Link href={'/founder'} onClick={() => closeboth()} className={`${isActive('/founder') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Founder & Message</Link>
+                    <Link href={'/about-trust'} onClick={() => closeboth()} className={`${isActive('/about-trust') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>About Our Trust</Link>
+                    <Link href={'/infrastructure'} onClick={() => closeboth()} className={`${isActive('/infrastructure') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Infrastructure</Link>
+                    <Link href={'/news'} onClick={() => closeboth()} className={`${isActive('/news') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>news</Link>
+                    <Link href={'/future-plans'} onClick={() => closeboth()} className={`${isActive('/future-plans') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Future Plans</Link>
+                    <Link href={'/our-partners'} onClick={() => closeboth()} className={`${isActive('/our-partners') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Our Partners</Link>
+                    <Link href={'/annual-report'} onClick={() => closeboth()} className={`${isActive('/annual-report') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Annual Report</Link>
+                    <Link href={'/faq'} onClick={() => closeboth()} className={`${isActive('/faq') ? 'bg-gray-300 text-black ' : ''} pl-7 pt-2`}>FAQ</Link>
                   </div>
 
                   {/* people page */}
-                  <li onClick={()=>togglelinks(1)} className="flex gap-1">People <IoMdArrowDropdown className="text-xl" /></li>
-                  <div className={`${openIndex === 1 ? 'h-25': 'h-0' } duration-300 overflow-hidden text-xs flex flex-col`}>
-                    <Link href={'/managing-committi'} onClick={()=>closeboth()} className={`${isActive('/managing-committi') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Managing Commitee</Link>
-                    <Link href={'/advisory-board'} onClick={()=>closeboth()} className={`${isActive('/advisory-board') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Advisory Board</Link>
-                    <Link href={'/teachers-house-partners'} onClick={()=>closeboth()} className={`${isActive('/teachers-house-partners') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Teachers & House Partners</Link>
+                  <li onClick={() => togglelinks(1)} className="flex gap-1">People <IoMdArrowDropdown className="text-xl" /></li>
+                  <div className={`${openIndex === 1 ? 'h-25' : 'h-0'} duration-300 overflow-hidden text-xs flex flex-col`}>
+                    <Link href={'/managing-committi'} onClick={() => closeboth()} className={`${isActive('/managing-committi') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Managing Commitee</Link>
+                    <Link href={'/advisory-board'} onClick={() => closeboth()} className={`${isActive('/advisory-board') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Advisory Board</Link>
+                    <Link href={'/teachers-house-partners'} onClick={() => closeboth()} className={`${isActive('/teachers-house-partners') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Teachers & House Partners</Link>
                   </div>
 
-                  <Link href='/what-we-do' onClick={()=>closeboth()} className={`${isActive('/what-we-do') ? 'bg-gray-300 text-black ' : ''} flex pl-5 py-3`}>
-                  What we do
+                  <Link href='/what-we-do' onClick={() => closeboth()} className={`${isActive('/what-we-do') ? 'bg-gray-300 text-black ' : ''} flex pl-5 py-3`}>
+                    What we do
                   </Link>
 
                   {/* Addimission page */}
-                  <li onClick={()=>togglelinks(2)} className="flex gap-1">Admission <IoMdArrowDropdown className="text-xl" /> </li>
-                  <div className={`${openIndex === 2 ? 'h-17': 'h-0' } duration-300 overflow-hidden text-xs flex flex-col`}>
-                    <Link href={'/adimission-process'} onClick={()=>closeboth()} className={`${isActive('/adimission-process') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Addimission Process</Link>
-                    <Link href={'/fee-policy'} onClick={()=>closeboth()} className={`${isActive('/fee-policy') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Fee Policy</Link>
+                  <li onClick={() => togglelinks(2)} className="flex gap-1">Admission <IoMdArrowDropdown className="text-xl" /> </li>
+                  <div className={`${openIndex === 2 ? 'h-17' : 'h-0'} duration-300 overflow-hidden text-xs flex flex-col`}>
+                    <Link href={'/adimission-process'} onClick={() => closeboth()} className={`${isActive('/adimission-process') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Addimission Process</Link>
+                    <Link href={'/fee-policy'} onClick={() => closeboth()} className={`${isActive('/fee-policy') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Fee Policy</Link>
                   </div>
 
-
-
                   <li>School Calendar 2025</li>
-                  <Link href='/contact' onClick={()=>closeboth()} className={`${isActive('/contact') ? 'bg-gray-300 text-black ' : ''} flex pl-5 py-3`} >
+                  <Link href='/contact' onClick={() => closeboth()} className={`${isActive('/contact') ? 'bg-gray-300 text-black ' : ''} flex pl-5 py-3`} >
                     Contact
-                    </Link>
-                  <Link href='/gallery' onClick={()=>closeboth()} className={`${isActive('/gallery') ? 'bg-gray-300 text-black ' : ''} flex pl-5 py-3`} >
-                     Gallery 
+                  </Link>
+                  <Link href='/gallery' onClick={() => closeboth()} className={`${isActive('/gallery') ? 'bg-gray-300 text-black ' : ''} flex pl-5 py-3`} >
+                    Gallery
                   </Link>
                 </ul>
               </div>
@@ -239,33 +233,57 @@ function Header() {
         </div>
         <section className="bg-transparent lg:bg-white h-22 w-full absolute top-41 z-0"></section>
 
-        {/* nabigation section */}
-
-
-
         {/* menu bar for mobile */}
         <div className={` ${show ? 'left-0' : '-left-[82%]'} bg-white md:hidden z-2 w-[82%] fixed h-screen overflow-y-auto top-0 text-black transition-all duration-400`}>
-          <div className="flex justify-end pr-4 mt-3 text-3xl" onClick={() => setshow(!show)}>
-            <div className="p-1">
-              <GiCrossMark />
-            </div>
+
+          <div className="p-1 text-yellow-500 sticky top-5 z-3 text-3xl left-[80%] w-10" onClick={() => setshow(!show)}>
+            <GiCrossMark />
           </div>
 
-          <div className="flex mt-13">
-            <ul className="font-semibold mb-20 pl-4">
-              <li className="bg-[#F5F5F5]"><Link href='/'>Home</Link></li>
-              <li>About</li>
-              <li>People</li>
-              <li><Link href='/what-we-do'>What we do</Link></li>
-              <li>Admission</li>
-              <li>School Calendar 2025</li>
-              <li><Link href='/contact'>Contact</Link></li>
-              <li><Link href='/gallery'>Gallery</Link></li>
-            </ul>
+          <div className="flex max-[490px]:flex-col mt-13 mb-20">
+            <ul className="font-semibold  pl-4 flex flex-col max-w-60">
 
-            <div className="max-[490px]:hidden">
-              <button className=" ml-7 relative -top-2 rounded-[6px] bg-yellow-500 font-semibold text-sm px-6 py-2">Donate Now</button>
-            </div>
+              <Link href='/' onClick={() => closeboth()} className={`${isActive('/') ? 'bg-gray-300 text-black ' : ''} flex pl-5 py-3`}>Home</Link>
+
+              <li onClick={() => togglelinks(0)} className="flex gap-1">About <IoMdArrowDropdown className="text-xl" /></li>
+              <div className={`${openIndex === 0 ? 'h-90' : 'h-0   '} duration-300 overflow-hidden text-xs flex flex-col`}>
+                <Link href={'/our-history'} onClick={() => closeboth()} className={`${isActive('/our-history') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Our History</Link>
+                <Link href={'/vision-mission'} onClick={() => closeboth()} className={`${isActive('/vision-mission') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Vision, Mission & Principal</Link>
+                <Link href={'/our-logo'} onClick={() => closeboth()} className={`${isActive('/our-logo') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Our Logo</Link>
+                <Link href={'/founder'} onClick={() => closeboth()} className={`${isActive('/founder') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Founder & Message</Link>
+                <Link href={'/about-trust'} onClick={() => closeboth()} className={`${isActive('/about-trust') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>About Our Trust</Link>
+                <Link href={'/infrastructure'} onClick={() => closeboth()} className={`${isActive('/infrastructure') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Infrastructure</Link>
+                <Link href={'/news'} onClick={() => closeboth()} className={`${isActive('/news') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>news</Link>
+                <Link href={'/future-plans'} onClick={() => closeboth()} className={`${isActive('/future-plans') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Future Plans</Link>
+                <Link href={'/our-partners'} onClick={() => closeboth()} className={`${isActive('/our-partners') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Our Partners</Link>
+                <Link href={'/annual-report'} onClick={() => closeboth()} className={`${isActive('/annual-report') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Annual Report</Link>
+                <Link href={'/faq'} onClick={() => closeboth()} className={`${isActive('/faq') ? 'bg-gray-300 text-black ' : ''} pl-7 pt-2`}>FAQ</Link>
+              </div>
+
+              <li onClick={() => togglelinks(1)} className="flex gap-1">People <IoMdArrowDropdown className="text-xl" /></li>
+              <div className={`${openIndex === 1 ? 'h-25' : 'h-0'} duration-300 overflow-hidden text-xs flex flex-col`}>
+                <Link href={'/managing-committi'} onClick={() => closeboth()} className={`${isActive('/managing-committi') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Managing Commitee</Link>
+                <Link href={'/advisory-board'} onClick={() => closeboth()} className={`${isActive('/advisory-board') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Advisory Board</Link>
+                <Link href={'/teachers-house-partners'} onClick={() => closeboth()} className={`${isActive('/teachers-house-partners') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Teachers & House Partners</Link>
+              </div>
+
+              <Link href='/what-we-do' className={`${isActive('/what-we-do') ? 'bg-gray-300 text-black ' : ''} flex pl-5 py-3`}>What we do</Link>
+
+              {/* Addimission page */}
+              <li onClick={() => togglelinks(2)} className="flex gap-1">Admission <IoMdArrowDropdown className="text-xl" /> </li>
+              <div className={`${openIndex === 2 ? 'h-17' : 'h-0'} duration-300 overflow-hidden text-xs flex flex-col`}>
+                <Link href={'/adimission-process'} onClick={() => closeboth()} className={`${isActive('/adimission-process') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Addimission Process</Link>
+                <Link href={'/fee-policy'} onClick={() => closeboth()} className={`${isActive('/fee-policy') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Fee Policy</Link>
+              </div>
+
+              <li>School Calendar 2025</li>
+              <Link href='/contact' onClick={() => closeboth()} className={`${isActive('/contact') ? 'bg-gray-300 text-black ' : ''} flex pl-5 py-3`}>Contact</Link>
+              <Link href='/gallery' onClick={() => closeboth()} className={`${isActive('/gallery') ? 'bg-gray-300 text-black ' : ''} flex pl-5 py-3`}>Gallery</Link>
+            </ul>
+            {/* donate button */}
+            <Link href={'/donate-us'} onClick={() => setshow(false)}>
+              <button className=" ml-7 min-[490px]:relative -top-2 rounded-[6px] bg-yellow-500 font-semibold text-sm px-6 py-2">Donate Now</button>
+            </Link>
 
           </div>
         </div>
@@ -278,6 +296,3 @@ function Header() {
 
 export default Header;
 
-
-
-// https://umeed.org.in/
