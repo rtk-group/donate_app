@@ -14,8 +14,8 @@ function Page() {
         {/* banner */}
         <div className='text-yellow-600 absolute bottom-15 sm:bottom-20 left-4 sm:left-20 pr-3'>
           <p className='text-3xl sm:text-5xl font-semibold sm:mb-5 '>Hope for a</p>
-          <p className='sm:mt-2'>Better Tommorow</p>
-          <p className='text-xs my-1 sm:my-5'>Empowering the Next Generation of Community and Global Leaders.</p>
+          <p className='sm:mt-2 font-semibold'>Better Tommorow</p>
+          <p className='text-xs my-1 sm:my-5 font-semibold'>Empowering the Next Generation of Community and Global Leaders.</p>
           <span><button className='px-5 py-2 bg-yellow-500 text-black text-xs rounded-[5px]'>Explore</button></span>
         </div>
       </div>
@@ -23,7 +23,7 @@ function Page() {
 
       <div className='flex flex-col items-start px-5 md:flex-row bg-white md:justify-center md:py-3 md:pb-9 '>
 
-        <div className='border w-full md:w-100 rounded-2xl overflow-hidden'>
+        <div className='w-full md:w-100 rounded-2xl overflow-hidden'>
           <Image width={200} className='w-full h-full object-cover' height={200} src='/assets/about.jpg' alt='' />
         </div>
 
@@ -121,7 +121,7 @@ function Page() {
 
         </div>
 
-        <button className='justify-self-center py-2 px-7 relative top-0 hover:-top-2 cursor-pointer duration-300 text-xs rounded-sm bg-yellow-500 text-black flex'><FaArrowAltCircleRight className='mr-1 mt-1' /> Check Previous Mentions</button>
+        <button className='justify-self-center text-center py-2 px-7 relative top-0 hover:-top-2 cursor-pointer duration-300 text-xs rounded-sm bg-yellow-500 text-black flex'><FaArrowAltCircleRight className='mr-1 mt-1' /> Check Previous Mentions</button>
       </div>
 
     </>

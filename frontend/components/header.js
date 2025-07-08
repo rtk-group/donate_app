@@ -267,7 +267,8 @@ function Header() {
                 <Link href={'/teachers-house-partners'} onClick={() => closeboth()} className={`${isActive('/teachers-house-partners') ? 'bg-gray-300 text-black ' : ''} pl-7 py-2`}>Teachers & House Partners</Link>
               </div>
 
-              <Link href='/what-we-do' className={`${isActive('/what-we-do') ? 'bg-gray-300 text-black ' : ''} flex pl-5 py-3`}>What we do</Link>
+              {/* what we do page */}
+              <Link href='/what-we-do' onClick={() => closeboth()} className={`${isActive('/what-we-do') ? 'bg-gray-300 text-black ' : ''} flex pl-5 py-3`}> What we do </Link>
 
               {/* Addimission page */}
               <li onClick={() => togglelinks(2)} className="flex gap-1">Admission <IoMdArrowDropdown className="text-xl" /> </li>
@@ -281,7 +282,7 @@ function Header() {
               <Link href='/gallery' onClick={() => closeboth()} className={`${isActive('/gallery') ? 'bg-gray-300 text-black ' : ''} flex pl-5 py-3`}>Gallery</Link>
             </ul>
             {/* donate button */}
-            <Link href={'/donate-us'} onClick={() => setshow(false)}>
+            <Link href={'/donate-us'} onClick={() => closeboth()} className="max-[490px]:pt-3">
               <button className=" ml-7 min-[490px]:relative -top-2 rounded-[6px] bg-yellow-500 font-semibold text-sm px-6 py-2">Donate Now</button>
             </Link>
 
