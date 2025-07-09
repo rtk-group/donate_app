@@ -16,11 +16,11 @@ function Page() {
                 <div className='md:w-[40%] text-gray-500 px-6'>
                     <p className='text-lg text-yellow-500 font-semibold'>Contact Us</p>
                     <p className='text-3xl my-2     '>Get In Touch</p>
-                    <p>At Umeed Academy, we work hard to give our children a better future. If you need more information or have questions, please call or email us. You can also fill out the form on the side, and we’ll get back to you immediately.</p>
+                    <p>At Quadri Khair Foundation, we work hard to give our children a better future. If you need more information or have questions, please call or email us. You can also fill out the form on the side, and we’ll get back to you immediately.</p>
                     <div className='mt-5'>
-                        <span className='flex mt-2 items-center text-sm'>< FaLocationDot className='text-yellow-500 mr-2' /> <p>Village- Moushal, PO -Tardah, PS - KLC, South 24 Parganas, Bhojerhat; PIN 743330</p></span>
-                        <span className='flex py-2 mt-1 items-center text-sm'><FaPhone className='text-yellow-500 mr-2' /><p>9699088779 <p>91 8439335370</p> </p></span>
-                        <span className='flex  mt-1 items-center text-sm'>< MdOutlineEmail className='text-yellow-500 mr-2' /> <p>info@umeed.org.in</p></span>
+                        <span className='flex mt-2 items-center text-sm'>< FaLocationDot className='text-yellow-500 mr-2' /> <p>Bahoranpur Kalan, Post Manpur, Moradabad 244001, India</p></span>
+                        <span className='flex py-2 mt-1 items-center text-sm'><FaPhone className='text-yellow-500 mr-2' /><p>9557940516 <p>91 9758490592</p> </p></span>
+                        <span className='flex  mt-1 items-center text-sm'>< MdOutlineEmail className='text-yellow-500 mr-2' /> <p>Qadrikhairfoundation@Gmail.Com</p></span>
                     </div>
                 </div>
 

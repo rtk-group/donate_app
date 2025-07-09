@@ -26,4 +26,33 @@
 
 
 
+// import { NextResponse } from 'next/server';
+// import Razorpay from 'razorpay';
 
+// export async function POST(request) {
+//   if (request.method === 'POST') {
+//     const razorpay = new Razorpay({
+//       key_id: process.env.RAZORPAY_KEY_ID,
+//       key_secret: process.env.RAZORPAY_KEY_SECRET,
+//     });
+
+//     const { amount } = request.json();
+
+//     const options = {
+//       amount: amount * 100, // Convert to paise
+//       currency: 'INR',
+//       receipt: 'donation_receipt_' + Date.now(),
+//     };
+
+//     try {
+//       const order = await razorpay.orders.create(options);
+//       NextResponse.status(200).json(order);
+//     } catch (error) {
+//       console.error(error);
+//       NextResponse.status(500).json({ error: 'Order creation failed' });
+//     }
+//   } else {
+//     NextResponse.setHeader('Allow', ['POST']);
+//     NextResponse.status(405).end(`Method ${req.method} Not Allowed`);
+//   }
+// }

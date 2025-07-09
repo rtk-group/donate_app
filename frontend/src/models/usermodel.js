@@ -32,11 +32,11 @@ const userSchema = new mongoose.Schema({
     required: true,
     uppercase: true
   },
-  donate_type: {
-    type: String,
-    enum: ['None_Zakat', 'Zakat'],
-    default: 'Zakat'
-  },
+  // donate_type: {
+  //   type: String,
+  //   enum: ['None_Zakat', 'Zakat'],
+  //   default: 'Zakat'
+  // },
   address: {
     type: String,
   }

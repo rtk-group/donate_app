@@ -60,21 +60,21 @@ function Header() {
                   <span className="flex items-center mr-3 text-yellow-500 text-2xl"><MdOutlineEmail /></span>
                   <div>
                     <p className="text-xs mb-1">Email Address</p>
-                    <p className="font-semibold">info@umeed.org.in</p>
+                    <p className="font-semibold"> qadrikhairfoundation@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex mx-7">
                   <span className="flex items-center mr-3 text-yellow-500 text-2xl"><FaPhone /></span>
                   <div>
                     <p className="text-xs mb-1">Phone Number</p>
-                    <p className="font-semibold">9690909619</p>
+                    <p className="font-semibold">9557940516</p>
                   </div>
                 </div>
                 <div className="flex">
                   <span className="flex items-center mr-3 text-yellow-500 text-2xl"><FaLocationDot /></span>
                   <div>
                     <p className="text-xs mb-1">Our Location</p>
-                    <p className="font-semibold">South 24 Pargana</p>
+                    <p className="font-semibold">Bahoranpur Kalan Moradabad</p>
                   </div>
                 </div>
               </div>

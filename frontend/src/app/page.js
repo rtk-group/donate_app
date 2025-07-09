@@ -43,11 +43,11 @@ function Page() {
       </div>
 
       <div className='bg-white px-4 py-5'>
-        <div className='flex flex-col items-center text-sm text-gray-500 px-4'>
+        <div className='flex flex-col items-center text-center text-sm text-gray-500 px-4'>
           <p className='text-lg text-yellow-500'>Operations</p>
-          <p className='text-2xl mb-3 -mt-1 text-black'>What do We Do</p>
-          <p className='mx-auto'>At Umeed Global School, we strive to nurture all our students into individuals</p>
-          <p>with a strong civic sense and a solid moral compass.</p>
+          <p className='text-2xl mb-3 -mt-1 text-black'>Introduction</p>
+          <p className='mx-auto'>Qadri Khair Foundation (“we,” “our,” or “us”) values your privacy and is committed to safeguarding your personal information.</p>
+          <p>outlines how we collect, use, store, and protect your data when you donate through our platform.</p>
         </div>
 
         <div className='md:flex justify-center gap-5 pt-12 md:py-6'>
@@ -84,10 +84,10 @@ function Page() {
         </div>
       </div>
 
-      <div className='justify-items-stretch bg-white py-5'>
+      <div className='bg-white py-5'>
         <div className='flex flex-col items-center'><p className='text-2xl text-black md:text-3xl'>Our Latest Features</p><p className='border border-yellow-500 w-30 md:w-50 mt-2'></p></div>
 
-        <div className=' flex flex-col items-center gap-4 text-black px-3 my-4 mb-7 md:mb-0 lg:my-6 md:px-5 '>
+        <div className=' flex flex-col items-center gap-4 text-black px-3 my-4 mb-7 md:mb-6 md:px-5 '>
 
           <div className='md:flex max-w-280 '>
             <div className='border border-yellow-500 p-6 rounded-xl md:mr-2'>
@@ -121,7 +121,7 @@ function Page() {
 
         </div>
 
-        <button className='justify-self-center text-center py-2 px-7 relative top-0 hover:-top-2 cursor-pointer duration-300 text-xs rounded-sm bg-yellow-500 text-black flex'><FaArrowAltCircleRight className='mr-1 mt-1' /> Check Previous Mentions</button>
+        <button className='max-w-53 mx-auto py-2 px-7 relative top-0 hover:-top-2 cursor-pointer duration-300 text-xs rounded-sm bg-yellow-500 text-black flex'><FaArrowAltCircleRight className='mr-1 mt-1' /> Check Previous Mentions</button>
       </div>
 
     </>
