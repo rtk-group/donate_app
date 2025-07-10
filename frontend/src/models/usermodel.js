@@ -15,16 +15,8 @@ const userSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
-  amount: {
+  outamount: {
     type: Number,
-    required: true
-  },
-  orderid: {
-    type: String,
-    required: true
-  },
-  receipt: {
-    type: String,
     required: true
   },
   pan: {
@@ -32,11 +24,21 @@ const userSchema = new mongoose.Schema({
     required: true,
     uppercase: true
   },
-  // donate_type: {
-  //   type: String,
-  //   enum: ['None_Zakat', 'Zakat'],
-  //   default: 'Zakat'
-  // },
+  country: {
+    type: String,
+    enum: ['india', 'usa', 'russia'],
+    default: 'india'
+  },
+  pincode: {
+    type: Number,
+    required: true
+  },
+  orderid:{
+    type: String
+  },
+  status:{
+    type: String
+  },
   address: {
     type: String,
   }
