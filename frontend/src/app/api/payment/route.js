@@ -22,7 +22,7 @@ export async function POST(request) {
     const status = order.status;
     await dbConnect();
     const saveduser = await usermodel.create({ name, phone, email, outamount, pan, country, pincode, orderid, status, address });
-    console.log({user: saveduser})
+    // console.log({user: saveduser})
     return NextResponse.json(order)
   } catch (error) {
     console.log(error);
