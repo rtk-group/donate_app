@@ -53,7 +53,7 @@ function Page() {
         <div className='md:flex justify-center gap-5 pt-12 md:py-6'>
 
           <div className='md:w-80 pb-10 rounded-2xl shadow-[gray_0_5px_25px_0]'>
-            <Image width={200} height={200} className='relative top-0 hover:-top-3 w-full transition-all duration-400 rounded-t-2xl ' src='/assets/card1.jpg' alt='' />
+            <Image width={200} height={200} className='h-60 relative top-0 hover:-top-3 w-full transition-all duration-400 rounded-t-2xl object-cover ' src='/assets/qacadmic.jpg' alt='' />
             <div className='text-sm text-gray-500 mt-5 ml-5'>
               <p className='text-xl font-semibold text-black'>Academics</p>
               <p>We provide an CBSE curriculum focusing on discussions, debates, outcome-based, and interdisciplinary learning.</p>
@@ -61,18 +61,18 @@ function Page() {
             </div>
           </div>
           <div className='md:w-80 pb-10 my-10 md:my-0 rounded-2xl shadow-[gray_0_5px_25px_0]'>
-            <Image width={200} height={200} className='relative top-0 hover:-top-3 w-full transition-all duration-400 rounded-t-2xl ' src='/assets/card2.jpg' alt='' />
+            <Image width={200} height={200} className='h-60 relative top-0 hover:-top-3 w-full transition-all duration-400 rounded-t-2xl object-cover ' src='/assets/qresidential.jpg' alt='' />
             <div className='text-sm text-gray-500 mt-5 ml-5'>
               <p className='text-xl font-semibold text-black'>Residential Programme</p>
-              <p>At Umeed Global School, we believe holistic development thrives in an immersive environment.</p>
+              <p>At Qadri Khair Foundation, we believe holistic development thrives in an immersive environment.</p>
               <button className='py-2 px-5 mt-5 relative top-0 hover:-top-2 cursor-pointer duration-400 rounded-sm border border-yellow-500 text-black'>Know More</button>
             </div>
           </div>
           <div className='md:w-80 md:hidden lg:block pb-10 rounded-2xl shadow-[gray_0_5px_25px_0]'>
-            <Image width={200} height={200} className='relative top-0 hover:-top-3 transition-all duration-400 w-full rounded-t-2xl ' src='/assets/card3.jpg' alt='' />
+            <Image width={200} height={200} className='h-60 relative top-0 hover:-top-3 transition-all duration-400 w-full rounded-t-2xl object-cover ' src='/assets/qinnovation.jpg' alt='' />
             <div className='text-sm text-gray-500 mt-5 ml-5'>
               <p className='text-xl font-semibold text-black'>Innovation & Technology</p>
-              <p>At Umeed Global School, we believe that innovation and scientific curiosity are the cornerstones of a progressive education system. </p>
+              <p>At Qadri Khair Foundation, we believe that innovation and scientific curiosity are the cornerstones of a progressive education system. </p>
               <button className='py-2 px-5 mt-5 relative top-0 hover:-top-2 cursor-pointer duration-400 rounded-sm border border-yellow-500 text-black'>Know More</button>
             </div>
           </div>

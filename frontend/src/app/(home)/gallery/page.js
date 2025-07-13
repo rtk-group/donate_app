@@ -17,18 +17,15 @@ function Page() {
             </div>
 
             <div className='grid md:grid-cols-3 mx-2 rounded-lg overflow-hidden'>
-                <Image src='/assets/gallery1.jpg' alt='Gallery image 1' width={600} height={400} className='w-full h-full object-cover' />
-                <Image src='/assets/gallery2.jpg' alt='Gallery image 1' width={600} height={400} className='w-full h-full object-cover' />
-                <Image src='/assets/gallery3.jpg' alt='Gallery image 3' width={600} height={400} className='w-full h-full object-cover' />
-                <Image src='/assets/gallery4.jpg' alt='Gallery image 3' width={600} height={400} className='w-full h-full object-cover' />
-                <Image src='/assets/gallery5.jpg' alt='Gallery image 3' width={600} height={400} className='w-full h-full object-cover' />
-                <Image src='/assets/gallery6.jpg' alt='Gallery image 3' width={600} height={400} className='w-full h-full object-cover' />
-                <Image src='/assets/gallery7.jpg' alt='Gallery image 3' width={600} height={400} className='w-full h-full object-cover' />
-                <Image src='/assets/gallery8.jpg' alt='Gallery image 3' width={600} height={400} className='w-full h-full object-cover' />
-                <Image src='/assets/gallery9.jpg' alt='Gallery image 3' width={600} height={400} className='w-full h-full object-cover' />
-                <Image src='/assets/gallery10.jpg' alt='Gallery image 3' width={600} height={400} className='w-full h-full object-cover' />
-                <Image src='/assets/gallery11.jpg' alt='Gallery image 3' width={600} height={400} className='w-full h-full object-cover' />
-                <Image src='/assets/gallery12.jpg' alt='Gallery image 3' width={600} height={400} className='w-full h-full object-cover' />
+                <Image src='/assets/qg1.jpg' alt='Gallery image 1' width={600} height={400} className='w-full h-full object-cover' />
+                <Image src='/assets/qg2.jpg' alt='Gallery image 1' width={600} height={400} className='w-full h-full object-cover' />
+                <Image src='/assets/qg3.jpg' alt='Gallery image 3' width={600} height={400} className='w-full h-full object-cover' />
+                <Image src='/assets/qg4.jpg' alt='Gallery image 3' width={600} height={400} className='w-full h-full object-cover' />
+                <Image src='/assets/qg5.jpg' alt='Gallery image 3' width={600} height={400} className='w-full h-full object-cover' />
+                <Image src='/assets/qresidential.jpg' alt='Gallery image 3' width={600} height={400} className='w-full h-full object-cover' />
+                <Image src='/assets/qacadmic.jpg' alt='Gallery image 3' width={600} height={400} className='w-full h-full object-cover' />
+                <Image src='/assets/qinnovation.jpg' alt='Gallery image 3' width={600} height={400} className='w-full h-full object-cover' />
+                <Image src='/assets/qg6.jpg' alt='Gallery image 3' width={600} height={400} className='w-full h-full object-cover' />
             </div>
 
 
