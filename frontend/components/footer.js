@@ -53,11 +53,11 @@ function Footer() {
             <button className='bg-yellow-500 font-semibold text-black px-5 py-2 mb-2 rounded-[6px] relative top-0 hover:-top-1 transition-all duration-400 cursor-pointer'>donate us</button>
             </Link>
             
-            <p className='text-black text-[16px] md:text-sm'>Privacy Policy for Donations</p>
+            <p className='text-black text-[16px] md:text-sm'>This site is managed and maintained by WebDuality Technologies Pvt Ltd.</p>
           </div>
 
         </div>
-        <div className='flex justify-center border-t pt-9 pb-1 text-xs text-black'><p>Copyright © 2022. All rights reserved.</p></div>
+        <div className='flex justify-center border-t pt-9 pb-1 text-xs text-black'><p>Copyright © 2024. All rights reserved.</p></div>
       </div>
 
     </footer>

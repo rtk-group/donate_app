@@ -49,11 +49,11 @@ function Donatefooter() {
             <p className='text-[17px] text-black'>Donate Us</p>
             <p>Your Support Will Help A Child Come Out Of The Vicious Cycle Of Generational Poverty Through Education, Health Care And Good Upbringing</p>
             
-            <p className='text-black text-[16px] md:text-sm'>Privacy Policy for Donations</p>
+            <p className='text-black text-[16px] md:text-sm'>This site is managed and maintained by WebDuality Technologies Pvt Ltd.</p>
           </div>
 
         </div>
-        <div className='flex justify-center border-t pt-9 pb-1 text-xs text-black'><p>Copyright © 2022. All rights reserved.</p></div>
+        <div className='flex justify-center border-t pt-9 pb-1 text-xs text-black'><p>Copyright © 2024. All rights reserved.</p></div>
       </div>
 
     </footer>
@@ -62,16 +62,3 @@ function Donatefooter() {
 
 export default Donatefooter
 
-
-
-// import React from 'react'
-
-// function () {
-//     return (
-//         <div>
-//            custom footer 
-//         </div>
-//     )
-// }
-
-// export default Donatefooter

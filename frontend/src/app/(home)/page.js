@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react'
 import { FaArrowAltCircleRight } from "react-icons/fa";
 
@@ -9,14 +10,13 @@ function Page() {
 
       <div className='bg-white relative' >
         <div style={{backgroundImage:"url('/assets/qinnovation.jpg')"}} className='bg-center bg-cover h-[70vh] sm:h-[80vh] overflow-hidden text-black relative -top-9'>
-          {/* <img className='w-full' src='/assets/qinnovation.jpg' alt='' /> */}
         </div>
         {/* banner */}
-        <div className='text-yellow-600 absolute bottom-15 sm:bottom-20 left-4 sm:left-20 pr-3'>
-          <p className='text-3xl sm:text-5xl font-semibold sm:mb-5 '>Hope for a</p>
-          <p className='sm:mt-2 font-semibold'>Better Tommorow</p>
-          <p className='text-xs my-1 sm:my-5 font-semibold'>Empowering the Next Generation of Community and Global Leaders.</p>
-          <span><button className='px-5 py-2 bg-yellow-500 text-black text-xs rounded-[5px]'>Explore</button></span>
+        <div className='text-yellow-700 absolute bottom-15 sm:bottom-20 left-4 sm:left-20 pr-3'>
+          <p className='text-3xl sm:text-5xl font-semibold sm:mb-5 '>Qadri Khair Foundation</p>
+          <p className='sm:mt-2 font-semibold'>Education is Hope — Q K Academy is the Path</p>
+          <p className='text-xs my-1 sm:my-5 font-semibold'>Bahoranpur, Moradabad, UP – India</p>
+          <Link href={'donate-us'}><button className='px-5 py-2 bg-yellow-500 text-black text-xs rounded-[5px] relative top-0 hover:-top-2 duration-300 cursor-pointer'>Donate Now</button></Link>
         </div>
       </div>
 
@@ -27,7 +27,7 @@ function Page() {
           <Image width={200} className='w-full h-full object-cover' height={200} src='/assets/about.jpg' alt='' />
         </div>
 
-        <div className='text-gray-500 grid justify-items-stretch py-5 mt-5 md:py-0 md:mt-0 text-sm md:ml-10 mb-8'>
+        <div className=' text-gray-500 grid justify-items-stretch py-5 mt-5 md:py-0 md:mt-0 text-sm md:ml-10 mb-8'>
           <p className='text-xl text-yellow-500'>About us</p>
           <p className='text-2xl mb-2 text-black '>We are on the Mission to:</p>
           <div className='ml-4'>
@@ -84,10 +84,10 @@ function Page() {
         </div>
       </div>
 
-      <div className='bg-white py-5'>
+      {/* <div className=' border bg-white py-5'>
         <div className='flex flex-col items-center'><p className='text-2xl text-black md:text-3xl'>Our Latest Features</p><p className='border border-yellow-500 w-30 md:w-50 mt-2'></p></div>
 
-        <div className=' flex flex-col items-center gap-4 text-black px-3 my-4 mb-7 md:mb-6 md:px-5 '>
+        <div className='border flex flex-col items-center gap-4 text-black px-3 my-4 mb-7 md:mb-6 md:px-5 '>
 
           <div className='md:flex max-w-280 '>
             <div className='border border-yellow-500 p-6 rounded-xl md:mr-2'>
@@ -122,7 +122,7 @@ function Page() {
         </div>
 
         <button className='max-w-53 mx-auto py-2 px-7 relative top-0 hover:-top-2 cursor-pointer duration-300 text-xs rounded-sm bg-yellow-500 text-black flex'><FaArrowAltCircleRight className='mr-1 mt-1' /> Check Previous Mentions</button>
-      </div>
+      </div> */}
 
     </>
   )
