@@ -11,24 +11,24 @@ function Donatefooter() {
       <div className=''>
         <div className=' md:grid md:grid-cols-4 '>
           <div className=' pb-5 flex md:justify-center'>
-            <div className='text-sm space-y-3 text-gray-500'>
+            <div className='text-sm space-y-3 text-gray-500 flex flex-col'>
               <p className='text-[17px] text-black'>Quick Links</p>
-              <p>Home</p>
-              <p>About Our Trust</p>
-              <p>Vison & Missson</p>
-              <p>What we do</p>
-              <p>Annual Report</p>
+              <Link href={'/'}>Home</Link>
+              <Link href={'/about-trust'}>About Our Trust</Link>
+              <Link href={'/vision-mission'}>Vison & Missson</Link>
+              <Link href={'/what-we-do'}>What we do</Link>
+              <Link href={'/annual-report'}>Annual Report</Link>
             </div>
           </div>
 
           <div className='hidden md:flex pb-5 md:justify-center'>
-            <div className='text-sm space-y-3 text-gray-500'>
+            <div className='text-sm space-y-3 text-gray-500 flex flex-col'>
               <p className='text-[17px] text-black'>Other Pages</p>
-              <p>Managing Committe</p>
-              <p>Founder</p>
-              <p>FAQ</p>
-              <p>Advosory Board</p>
-              <p>Teachers & House Parents</p>
+              <Link href={'/managing-committi'}>Managing Committe</Link>
+              <Link href={'/fouder'}>Founder</Link>
+              <Link href={'/faq'}>FAQ</Link>
+              <Link href={'/advisory-board'}>Advosory Board</Link>
+              <Link href={'/teachers-house-partners'}>Teachers & House Parents</Link>
             </div>
           </div>
 
@@ -48,10 +48,6 @@ function Donatefooter() {
           <div className='text-sm space-y-3 md:pl-6 mb-5 md:mb-3 mt-5 md:mt-0 text-gray-500'>
             <p className='text-[17px] text-black'>Donate Us</p>
             <p>Your Support Will Help A Child Come Out Of The Vicious Cycle Of Generational Poverty Through Education, Health Care And Good Upbringing</p>
-            
-            {/* <Link href='/donate-us'>
-            <button className='bg-yellow-500 font-semibold text-black px-5 py-2 mb-2 rounded-[6px] relative top-0 hover:-top-1 transition-all duration-400 cursor-pointer'>donate us</button>
-            </Link> */}
             
             <p className='text-black text-[16px] md:text-sm'>Privacy Policy for Donations</p>
           </div>

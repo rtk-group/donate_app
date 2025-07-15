@@ -50,9 +50,9 @@ function Header() {
         <div className="lg:px-20 xl:px-25 bg-[#F5F5F5]">
 
           <div className="grid lg:grid-cols-[1fr_4fr] gap-2 text-black bg-[#F5F5F5] m-auto">
-            <div className="flex w-full justify-center">
+            <Link href={'/'} className="flex w-full justify-center">
               <img className="max-[500px]:w-32 w-45 sm:w-60 md:w-30 lg:w-32" src="/assets/Logo.png" alt="" />
-            </div>
+            </Link>
 
             <div className=" hidden md:grid mb-7 lg:mb-0 grid-cols-[4fr_1fr] text-sm items-center">
               <div className=" flex justify-end mr-13 lg:mr-0 lg:justify-start">

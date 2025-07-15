@@ -11,24 +11,24 @@ function Footer() {
       <div className=''>
         <div className=' md:grid md:grid-cols-4 '>
           <div className=' pb-5 flex md:justify-center'>
-            <div className='text-sm space-y-3 text-gray-500'>
+            <div className='text-sm space-y-3 text-gray-500 flex flex-col'>
               <p className='text-[17px] text-black'>Quick Links</p>
-              <p>Home</p>
-              <p>About Our Trust</p>
-              <p>Vison & Missson</p>
-              <p>What we do</p>
-              <p>Annual Report</p>
+              <Link href={'/'}>Home</Link>
+              <Link href={'/about-trust'}>About Our Trust</Link>
+              <Link href={'/vision-mission'}>Vison & Missson</Link>
+              <Link href={'/what-we-do'}>What we do</Link>
+              <Link href={'/annual-report'}>Annual Report</Link>
             </div>
           </div>
 
           <div className='hidden md:flex pb-5 md:justify-center'>
-            <div className='text-sm space-y-3 text-gray-500'>
+            <div className='text-sm space-y-3 text-gray-500 flex flex-col'>
               <p className='text-[17px] text-black'>Other Pages</p>
-              <p>Managing Committe</p>
-              <p>Founder</p>
-              <p>FAQ</p>
-              <p>Advosory Board</p>
-              <p>Teachers & House Parents</p>
+              <Link href={'/managing-committi'}>Managing Committe</Link>
+              <Link href={'/fouder'}>Founder</Link>
+              <Link href={'/faq'}>FAQ</Link>
+              <Link href={'/advisory-board'}>Advosory Board</Link>
+              <Link href={'/teachers-house-partners'}>Teachers & House Parents</Link>
             </div>
           </div>
 

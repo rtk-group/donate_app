@@ -8,8 +8,8 @@ function Page() {
     <>
 
       <div className='bg-white relative' >
-        <div className='md:h-[80vh] overflow-hidden text-black relative -top-9'>
-          <img className='w-full' src='/assets/hero.jpg' alt='' />
+        <div style={{backgroundImage:"url('/assets/qinnovation.jpg')"}} className='bg-center bg-cover h-[70vh] sm:h-[80vh] overflow-hidden text-black relative -top-9'>
+          {/* <img className='w-full' src='/assets/qinnovation.jpg' alt='' /> */}
         </div>
         {/* banner */}
         <div className='text-yellow-600 absolute bottom-15 sm:bottom-20 left-4 sm:left-20 pr-3'>
