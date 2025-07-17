@@ -43,7 +43,7 @@ function Page() {
             <Locator text='Adimission Process' />
             <div className='flex flex-col items-center text-xs pb-10 px-4 bg-white text-gray-600'>
                 <p className='text-2xl font-bold text-black'>Admission and Fee Policy:</p>
-                <p className='text-2xl font-bold text-black'>Umeed Global School</p>
+                <p className='text-2xl font-bold text-black'>Qadri Khair Foundation</p>
 
                 <div className='max-w-115 leading-5 py-4'>
                     <p className='mb-4'>Admission will be taken as per the availability of seats.</p>
@@ -97,14 +97,14 @@ function Page() {
                         <MdOutlineEmail className='text-yellow-500 text-2xl mr-3' />
                         <div className='leading-5'>
                             <p>Email Address</p>
-                            <p>info@umeed.org.in</p>
+                            <p>qadrikhairfoundation@gmail.com</p>
                         </div>
                     </span>
                     <span className='flex py-2 mt-2 items-center '>
                         <FaPhone className='text-yellow-500 text-2xl mr-3' />
                         <div className='leading-5'>
                             <p>Phone Number</p>
-                            <p>91 8439335370 9699088779</p>
+                            <p>91 9557940516 91 9758490592</p>
                         </div>
                     </span>
                 </div>

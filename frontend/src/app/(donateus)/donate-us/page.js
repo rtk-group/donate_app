@@ -85,14 +85,14 @@ function Page() {
                     <MdOutlineEmail className='text-yellow-500 text-2xl mr-3' />
                     <div className='leading-5'>
                         <p>Email Address</p>
-                        <p>info@umeed.org.in</p>
+                        <p>qadrikhairfoundation@gmail.com</p>
                     </div>
                 </span>
                 <span className='flex py-2 mt-2 items-center '>
                     <FaPhone className='text-yellow-500 text-2xl mr-3' />
                     <div className='leading-5'>
                         <p>Phone Number</p>
-                        <p>91 8439335370 9699088779</p>
+                        <p>91 9557940516 91 9758490592</p>
                     </div>
                 </span>
             </div>

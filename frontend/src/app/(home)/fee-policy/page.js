@@ -45,7 +45,7 @@ function Page() {
             <p className='text-2xl font-bold text-black'>Admission and Fee Policy:</p>
 
             <div className='max-w-110 leading-5 py-4'>
-                <p className='mb-4'>Umeed Global School is dedicated to providing equitable and accessible education to all students, irrespective of their socioeconomic backgrounds. Our mission is to eliminate barriers to educational opportunities and empower students to realize their full potential.</p>
+                <p className='mb-4'>Qadri Khair Foundation is dedicated to providing equitable and accessible education to all students, irrespective of their socioeconomic backgrounds. Our mission is to eliminate barriers to educational opportunities and empower students to realize their full potential.</p>
                 <p className='mb-4'>To promote equitable access to education, the school will prioritize admissions for candidates from underprivileged backgrounds, including orphans, destitute children, and those from economically challenged families. 75% of the seats will be available for merit-based scholarships sponsored by the school board, which will cover tuition fees, hostel accommodation, and meals, ensuring these candidates receive a 100% scholarship.</p>
                 <p className='mb-4'>In order to maintain the school’s financial stability and sustainability, 25% of the seats will be reserved for merit-based candidates who are able to pay the full school and hostel fees.</p>
                 <p className='mb-4'><span className='font-bold text-gray-800'>Discretion:</span>The allocation of seats to different candidates will be determined through a comprehensive evaluation process conducted by our admissions team. This process will assess whether candidates qualify for the scholarship or non-scholarship category.</p>
@@ -98,14 +98,14 @@ function Page() {
                     <MdOutlineEmail className='text-yellow-500 text-2xl mr-3' />
                     <div className='leading-5'>
                         <p>Email Address</p>
-                        <p>info@umeed.org.in</p>
+                        <p>qadrikhairfoundation@gmail.com</p>
                     </div>
                 </span>
                 <span className='flex py-2 mt-2 items-center '>
                     <FaPhone className='text-yellow-500 text-2xl mr-3' />
                     <div className='leading-5'>
                         <p>Phone Number</p>
-                        <p>91 8439335370 9699088779</p>
+                        <p>91 9557940516 91 9758490592</p>
                     </div>
                 </span>
             </div>

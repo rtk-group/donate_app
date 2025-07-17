@@ -55,7 +55,7 @@ function Header() {
             </Link>
 
             <div className=" hidden md:grid mb-7 lg:mb-0 grid-cols-[4fr_1fr] text-sm items-center">
-              <div className=" flex justify-end mr-13 lg:mr-0 lg:justify-start">
+              <div className=" flex justify-end lg:justify-start">
                 <div className="flex">
                   <span className="flex items-center mr-3 text-yellow-500 text-2xl"><MdOutlineEmail /></span>
                   <div>

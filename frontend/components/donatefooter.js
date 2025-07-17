@@ -53,7 +53,7 @@ function Donatefooter() {
           </div>
 
         </div>
-        <div className='flex justify-center border-t pt-9 pb-1 text-xs text-black'><p>Copyright © 2024. All rights reserved.</p></div>
+        <div className='flex flex-col items-center  border-t pt-7 pb-1 text-xs text-black'><p>Copyright © 2025. All rights reserved.</p> <a href='https://www.webduality.in'>www.webduality.in</a></div>
       </div>
 
     </footer>
