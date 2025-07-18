@@ -16,14 +16,23 @@ export async function POST(request) {
       currency: "INR",
       receipt: "receipt#1",
     };
+    
 
     const order = await razorpay.orders.create(options);
     const orderid = order.id;
     const status = order.status;
+
     await dbConnect();
     const saveduser = await usermodel.create({ name, phone, email, outamount, pan, country, pincode, orderid, status, address });
-    // console.log({user: saveduser})
-    return NextResponse.json(order)
+    return NextResponse.json(order, {
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'POST',
+        'Access-Control-Allow-Headers': 'Content-Type'
+      }
+      })
+
+    
   } catch (error) {
     console.log(error);
     return NextResponse.json({ message: 'Failed to save user data', error: error.message },
