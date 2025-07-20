@@ -33,14 +33,28 @@ const userSchema = new mongoose.Schema({
     type: Number,
     required: true
   },
-  orderid:{
-    type: String
-  },
-  status:{
-    type: String
-  },
+  // orderid:{
+  //   type: String
+  // },
   address: {
     type: String,
+  },
+  rez_orderid: {
+    type: String,
+    default: ""
+  },
+  rez_paymentid: {
+    type: String,
+    default: ""
+  },
+  rez_signature: {
+    type: String,
+    default: ""
+  },
+  payment_status: {
+    type: String,
+    enum: ['fail', 'success'],
+    default: 'fail'
   }
 },
 { timestamps: true });

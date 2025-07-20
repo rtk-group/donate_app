@@ -37,8 +37,6 @@ export default function DonatePage() {
   const pincode = Number(formdata.pincode);
   const address = formdata.address;
 
-  // console.log(formdata);
-
   // usestate for loading
   const [loading, setLoading] = React.useState(false);
 
@@ -68,10 +66,18 @@ export default function DonatePage() {
 
     setLoading(true);
 
+    const after_payment = async (response) => {
+
+      const rez_orderid = response.razorpay_order_id;
+      const rez_paymentid = response.razorpay_payment_id;
+      const rez_signature = response.razorpay_signature;
+      await axios.put('/api/payment', { email, rez_orderid, rez_paymentid, rez_signature });
+      alert('Payment successful! Payment ID: ' + response.razorpay_payment_id);
+    }
+
     try {
       const response = await axios.post('/api/payment', { name, phone, email, outamount, pan, country, pincode, address });
       const order = response.data;
-
       const options = {
         key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
         amount: order.amount,
@@ -80,9 +86,8 @@ export default function DonatePage() {
         description: 'Thank you for your donation!',
         order_id: order.id,
         handler: function (response) {
-            alert('Payment successful! Payment ID: ' + response.razorpay_payment_id);
-            setformdata({ name: '', phone: '', email: '', amount: '', pan: '', country: '', pincode: '', address: '' });
-            return (response.razorpay_payment_id)
+          after_payment(response)
+          setformdata({ name: '', phone: '', email: '', amount: '', pan: '', country: '', pincode: '', address: '' });
         },
 
         prefill: {
@@ -95,12 +100,10 @@ export default function DonatePage() {
         },
       };
 
-      // console.log(options.handler);
-
       const paymentObject = new window.Razorpay(options);
       paymentObject.open();
     } catch (error) {
-      console.error(error);
+      console.error('something error', error);
       alert('Something went wrong while processing your donation.');
     }
 
@@ -203,7 +206,7 @@ export default function DonatePage() {
               <input type="text" onChange={onchangehandler} id="address" name="address" value={formdata.address} className='outline outline-1 outline-gray-300 focus:outline focus:outline-red-800 text-gray-700 w-60 sm:w-70 md:w-60 lg:w-70 h-10 pl-2 rounded-sm' />
             </div>
 
-            <button type="submit" className='text-white w-30 py-2 mx-auto mt-3 bg-pink-950 rounded-lg'>
+            <button type="submit" className='text-white w-30 py-2 mx-auto mt-3 bg-pink-950 cursor-pointer rounded-lg relative top-0 hover:-top-2 hover:bg-pink-900 duration-300'>
               {loading ? 'Processing...' : 'Donate Now'}
             </button>
           </form>
