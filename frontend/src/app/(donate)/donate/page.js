@@ -206,7 +206,7 @@ export default function DonatePage() {
               <input type="text" onChange={onchangehandler} id="address" name="address" value={formdata.address} className='outline outline-1 outline-gray-300 focus:outline focus:outline-red-800 text-gray-700 w-60 sm:w-70 md:w-60 lg:w-70 h-10 pl-2 rounded-sm' />
             </div>
 
-            <button type="submit" className='text-white w-30 py-2 mx-auto mt-3 bg-pink-950 cursor-pointer rounded-lg relative top-0 hover:-top-2 hover:bg-pink-900 duration-300'>
+            <button type="submit" className='text-white w-30 py-2 mx-auto mt-3 bg-red-950 cursor-pointer rounded-lg relative top-0 hover:-top-2 hover:bg-red-900 duration-300'>
               {loading ? 'Processing...' : 'Donate Now'}
             </button>
           </form>
