@@ -31,7 +31,7 @@ function Page() {
               </div>
               <div className='border border-black p-6 rounded-xl md:ml-2 mt-4 md:mt-0'>
                 <p className='font-semibold text-xs text-yellow-500 border-b border-yellow-500 inline'>NEWS CUBIC</p>
-                <p className='text-xl font-semibold text-gray-700 my-3'>25 year old Wali Rahmani raised Rs 6 crore for children in 6 days, ‘Umeed Academy’ will open, know how?</p>
+                <p className='text-xl font-semibold text-gray-700 my-3'>25 year old Wali Rahmani raised Rs 6 crore for children in 6 days, ‘Qadri Khair ’ will open, know how?</p>
                 <p className='text-sm text-gray-500 mb-6'>25 year old Wali Rahmani, resident of West Bengal, is in discussion on social media these days. The reason is the Rs 6 crore fund raised for the education of poor children</p>
                 <button className='py-3 px-5  text-xs mt-5 md:mt-0 rounded-sm bg-yellow-500 text-black flex relative top-0 hover:-top-2 duration-300'><FaArrowAltCircleRight className='mr-1 mt-[1px]' /> Read More</button>
               </div>
@@ -40,8 +40,8 @@ function Page() {
             <div className='md:flex max-w-280'>
               <div className='border border-black p-6 rounded-xl md:mr-2'>
                 <p className='font-semibold text-xs text-yellow-500 border-b border-yellow-500 inline'>TIMES NOW</p>
-                <p className='text-xl font-semibold text-gray-700 my-3'>Academy That Raised Rs 5.5 Crore in 5 Days, All About Umeed Academy Wali Rahmani</p>
-                <p className='text-sm text-gray-500 mb-6'>Umeed Academy Founder Wali Rahmani, a social activist and lawyer from West Bengal has successfully crowfunded Rs 5.5 crore in 5 days.</p>
+                <p className='text-xl font-semibold text-gray-700 my-3'>Academy That Raised Rs 5.5 Crore in 5 Days, All About Qadri Khair  Wali Rahmani</p>
+                <p className='text-sm text-gray-500 mb-6'>Qadri Khair  Founder Wali Rahmani, a social activist and lawyer from West Bengal has successfully crowfunded Rs 5.5 crore in 5 days.</p>
                 <button className='py-3 px-5  text-xs mt-5 md:mt-0 rounded-sm bg-yellow-500 text-black flex relative top-0 hover:-top-2 duration-300'><FaArrowAltCircleRight className='mr-1 mt-[1px]' /> Read More</button>
               </div>
               <div className='border border-yellow-500 p-6 rounded-xl md:ml-2 mt-4 md:mt-0'>
@@ -90,7 +90,7 @@ function Page() {
           <div className='w-full md:max-w-90 flex flex-col md:mx-auto'>
             <Image src='/assets/gallery2.jpg' alt='Gallery image 1' width={600} height={400} className='w-full h-full object-cover rounded-t-lg' />
             <div className='py-7 px-10 shadow-[0_5px_25px_0_gray] rounded-b-lg'>
-              <button className='text-gray-700 text-xs py-3 w-full bg-yellow-500 rounded-sm relative top-0 hover:-top-2 duration-400 cursor-pointer'>DONATE NOW</button>
+              <Link href={'/donate-us'}> <button className='text-gray-700 text-xs py-3 w-full bg-yellow-500 rounded-sm relative top-0 hover:-top-2 duration-400 cursor-pointer'>DONATE NOW</button> </Link>
             </div>
           </div>
 

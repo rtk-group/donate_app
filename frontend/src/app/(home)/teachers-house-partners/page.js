@@ -22,9 +22,7 @@ function Page() {
                                         <p className='text-xs text-gray-600'>At Umeed Global School, our primary objective is to provide a nurturing environment and high-quality education for children who otherwise lack the resources to access such opportunities. To achieve this, we have assembled a team of highly trained, qualified, and passionate educators who are dedicated to fostering both the academic and holistic development of our students.</p>
                                           <p className='text-xs text-gray-600 my-7'>Our teachers are not merely instructors; they are facilitators in the truest sense, guiding students through the learning process with care, innovation, and insight. They create dynamic, interactive learning environments that encourage curiosity, critical thinking, and active participation, both inside and outside the classroom. Recognizing that effective facilitation requires staying relevant in an ever-changing world, our educators regularly undergo comprehensive teacher training programs. These programs ensure they are equipped with contemporary teaching methodologies and remain attuned to the latest educational advancements.</p>
                                           <p className='text-xs text-gray-600 mt-6'>At Umeed Global School, facilitation goes beyond traditional teaching. Our educators serve as mentors and role models, empowering students to take ownership of their learning journeys while providing unwavering support. By fostering a culture of collaboration and exploration, our facilitators inspire students to grow into confident, compassionate, and capable individuals ready to make a positive impact on the world</p>
-                                         
-
-                                        
+                                   
                                           
                                           <div className='lg:max-w-130 rounded-lg overflow-hidden my-4 md:pl-10 md:px-5 lg:pl-0 lg:px-0'>
                                               <Image src='/assets/gallery1.jpg' alt='Gallery image 1' width={600} height={400} className='w-full lg:h-90 object-cover rounded-lg' />
@@ -41,24 +39,22 @@ function Page() {
                                              <p className='text-xs text-gray-600 my-7'></p>
                                          <Socialmediabox/>
                       
-                                      </div>
-                      
-                      
+                                      </div>                     
                       
                                       {/* right section */}
                                       <div className='px-12 lg:px-5 flex justify-center lg:block mt-10 lg:mt-0 mb-3 lg:mb-0 w-full '>
                                           <div className='w-full md:max-w-80 flex flex-col'>
                                               <Image src='/assets/gallery2.jpg' alt='Gallery image 1' width={600} height={400} className='w-full h-full object-cover rounded-t-lg' />
                                               <div className='py-7 px-10 shadow-[0_5px_25px_0_gray] rounded-b-lg'>
-                                              <button className='text-gray-700 text-xs py-3 w-full bg-yellow-500 rounded-sm relative top-0 hover:-top-2 transition-all duration-400 cursor-pointer'>DONATE NOW</button>
+                                              <Link href={'/donate-us'}> <button className='text-gray-700 text-xs py-3 w-full bg-yellow-500 rounded-sm relative top-0 hover:-top-2 transition-all duration-400 cursor-pointer'>DONATE NOW</button> </Link>
                                               </div>
                                           </div>
                       
                                           <div className='hidden lg:flex flex-col mt-5 gap-3 text-gray-600 '>
                                               <p className='text-xl text-black'>Quick Links</p>
-                                              <Link href='' className='flex group '> <FaAngleRight className='text-black mr-2 pt-1 group-hover:text-gray-600' /> <p className='group-hover:text-black text-sm'>Founder</p></Link>
-                                              <Link href='' className='flex group '> <FaAngleRight className='text-black mr-2 pt-1 group-hover:text-gray-600' /> <p className='group-hover:text-black text-sm'>Managing Committi</p></Link>
-                                              <Link href='' className='flex group '> <FaAngleRight className='text-black mr-2 pt-1 group-hover:text-gray-600' /> <p className='group-hover:text-black text-sm'>Advisory Board</p></Link>
+                                              <Link href={'/founder'} className='flex group '> <FaAngleRight className='text-black mr-2 pt-1 group-hover:text-gray-600' /> <p className='group-hover:text-black text-sm'>Founder</p></Link>
+                                              <Link href={'/managing-committi'} className='flex group '> <FaAngleRight className='text-black mr-2 pt-1 group-hover:text-gray-600' /> <p className='group-hover:text-black text-sm'>Managing Committi</p></Link>
+                                              <Link href={'/advisory-board'} className='flex group '> <FaAngleRight className='text-black mr-2 pt-1 group-hover:text-gray-600' /> <p className='group-hover:text-black text-sm'>Advisory Board</p></Link>
                       
                                           </div>
                       

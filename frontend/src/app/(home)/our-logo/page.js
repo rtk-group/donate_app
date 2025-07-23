@@ -4,6 +4,7 @@ import { FaWhatsapp, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa6";
 import Image from 'next/image';
 import Link from 'next/link';
+import Socialmediabox from '../../../../components/sociamediabox';
 
 function Page() {
     return (
@@ -18,7 +19,7 @@ function Page() {
                     </div>
                     <p className='text-2xl mb-3'>Our Logo</p>
 
-                    <p className='text-xs text-gray-600 mb-7'>The logo of Umeed Global School represents and embodies the core principles that form the foundation of our school. It symbolizes the four guiding values of Courage, Truth, Justice and Leadership, each represented by a distinct emblem within the logo.</p>
+                    <p className='text-xs text-gray-600 mb-7'>The logo of Qadri Khair Foundation represents and embodies the core principles that form the foundation of our school. It symbolizes the four guiding values of Courage, Truth, Justice and Leadership, each represented by a distinct emblem within the logo.</p>
                     <p className='text-xs text-gray-600 mb-7'>The Eagle signifies courage, reflecting the strength and determination we instil in our students. The pen in “Truth” symbolizes our commitment to nurturing children who write, speak, and uphold truth in all they do. The Scales stand for justice, representing fairness and equity as integral components of our values. Finally, the Four Hands Holding Each Other depicts leadership, highlighting the unity and collaboration essential for fostering future leaders.</p>
                     <p className='text-xs text-gray-600 mb-7'>These principles are inspired by the profound teachings of the renowned poet, Allama Iqbal,
                         and are rooted in his timeless lines:</p>
@@ -31,18 +32,8 @@ function Page() {
 
                     <p className='text-xs text-gray-600 mb-7'>This verse reminds us to relearn the timeless lessons of truth, justice, courage, and leadership. By embracing these values, our students are empowered to rise as influential leaders, shaping a better tomorrow.</p>
 
-
-
-
-                    <div className='mt-8'>
-                        <p className='text-sm text-gray-600 mb-3'>Share This:</p>
-                        <div className='flex gap-2'>
-                            <div className='p-2 text-gray-700 bg-yellow-500 rounded-lg '><FaWhatsapp /></div>
-                            <div className='p-2 text-gray-700 bg-yellow-500 rounded-lg '><FaFacebook /></div>
-                            <div className='p-2 text-gray-700 bg-yellow-500 rounded-lg '><FaLinkedin /></div>
-                            <div className='p-2 text-gray-700 bg-yellow-500 rounded-lg '><FaTwitter /></div>
-                        </div>
-                    </div>
+                    <Socialmediabox/>
+                    
 
                 </div>
 
@@ -52,7 +43,7 @@ function Page() {
 
                     <div className='w-full md:max-w-80'>
                         <div className='py-7 px-10 shadow-[0_5px_25px_0_gray]'>
-                            <button className='text-gray-700 text-xs py-3 w-full bg-yellow-500 rounded-sm relative top-0 hover:-top-2 transition-all duration-400 cursor-pointer'>DONATE NOW</button>
+                             <Link href={'/donate-us'}> <button className='text-gray-700 text-xs py-3 w-full bg-yellow-500 rounded-sm relative top-0 hover:-top-2 transition-all duration-400 cursor-pointer'>DONATE NOW</button> </Link>
                         </div>
                     </div>
 

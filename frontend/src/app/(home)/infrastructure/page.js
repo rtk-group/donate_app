@@ -89,22 +89,17 @@ function Page() {
                     <p className='font-semibold text-gray-800 my-3'>Comfortable Residential & Dining Facilities</p>
                     <p className='text-xs text-gray-600 leading-5'>UGS provides well-planned residential facilities that ensure a secure and comfortable living experience for students and faculty. Our dormitories are thoughtfully designed, wellventilated; has a separate bed and storage space for each student and are equipped with modern attached washrooms & toilets, creating a home-like atmosphere. Well-equipped rooms are available for house parents and faculty members, ensuring their close proximity to students while offering them a comfortable living space. Additionally, our state-of-the-art dining hall, supported by a high-tech kitchen, offers a modern and hygienic setting where nutritious meals are served. To enhance students’ convenience, a well-facilitated laundry room ensures access to clean and fresh attire at all times.</p>
                     <p className='font-semibold text-gray-800 my-3'>A Vision Beyond Infrastructure</p>
-                    <p className='text-xs text-gray-600 leading-5 mb-10'>At UGS, we go beyond building infrastructure—we create an environment that inspires learning, growth, and success. Our world-class facilities, coupled with an unwavering commitment to academic and personal development, ensure that every student embarks on a journey of excellence, innovation, and holistic learning.
-
-                        UGS is more than just a school—it is a world of possibilities,preparing students for a future of limitless opportunities.</p>
-
+                    <p className='text-xs text-gray-600 leading-5 mb-10'>At UGS, we go beyond building infrastructure—we create an environment that inspires learning, growth, and success. Our world-class facilities, coupled with an unwavering commitment to academic and personal development, ensure that every student embarks on a journey of excellence, innovation, and holistic learning. UGS is more than just a school—it is a world of possibilities,preparing students for a future of limitless opportunities.</p>
 
                     <Socialmediabox />
-
                 </div>
-
 
                 {/* right section */}
                 <div className='px-12 lg:px-0 flex justify-center lg:block mt-20 lg:mt-0 mb-3 lg:mb-0 w-full '>
                     <div className='w-full md:max-w-90 flex flex-col'>
-                        <Image src='/assets/gallery2.jpg' alt='Gallery image 1' width={600} height={400} className='w-full h-full object-cover' />
-                        <div className='py-7 px-10 shadow-[0_5px_25px_0_gray]'>
-                            <button className='text-gray-700 text-xs py-3 w-full bg-yellow-500 rounded-sm relative top-0 hover:-top-2 transition-all duration-400 cursor-pointer'>DONATE NOW</button>
+                        <Image src='/assets/gallery2.jpg' alt='Gallery image 1' width={600} height={400} className='w-full h-full object-cover rounded-t-lg ' />
+                        <div className='py-7 px-10 shadow-[0_5px_25px_0_gray] rounded-b-lg'>
+                            <Link href={'/donate-us'}> <button className='text-gray-700 text-xs py-3 w-full bg-yellow-500 rounded-sm relative top-0 hover:-top-2 transition-all duration-400 cursor-pointer'>DONATE NOW</button> </Link>
                         </div>
                     </div>
 

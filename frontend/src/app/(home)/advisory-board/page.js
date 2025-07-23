@@ -78,14 +78,9 @@ function page() {
                               <i className='text-sm'>- Principal, Genesis Global School, Noida; Accomplished Educator with 20+ Years of Experience in Child-Centered Learning.</i>
                               </div>
 
-                              
-
-
-        
                              <Socialmediabox/>
           
                           </div>
-          
           
           
                           {/* right section */}
@@ -93,15 +88,15 @@ function page() {
                               <div className='w-full md:max-w-110 flex flex-col mx-auto'>
                                   <Image src='/assets/gallery2.jpg' alt='Gallery image 1' width={600} height={400} className='w-full h-full object-cover rounded-t-lg' />
                                   <div className='py-7 px-10 shadow-[0_5px_25px_0_gray] rounded-b-lg'>
-                                  <button className='text-gray-700 text-xs py-3 w-full bg-yellow-500 rounded-sm relative top-0 hover:-top-2 transition-all duration-400 cursor-pointer'>DONATE NOW</button>
+                                  <Link href={'/donate-us'}> <button className='text-gray-700 text-xs py-3 w-full bg-yellow-500 rounded-sm relative top-0 hover:-top-2 transition-all duration-400 cursor-pointer'>DONATE NOW</button> </Link>
                                   </div>
                               </div>
           
                               <div className='hidden lg:flex flex-col mt-5 gap-3 text-gray-600 md:max-w-110 mx-auto '>
                                   <p className='text-xl text-black'>Quick Links</p>
-                                  <Link href='' className='flex group '> <FaAngleRight className='text-black mr-2 pt-1 group-hover:text-gray-600' /> <p className='group-hover:text-black text-sm'>Teachers & House Partners</p></Link>
-                                  <Link href='' className='flex group '> <FaAngleRight className='text-black mr-2 pt-1 group-hover:text-gray-600' /> <p className='group-hover:text-black text-sm'>Founder</p></Link>
-                                  <Link href='' className='flex group '> <FaAngleRight className='text-black mr-2 pt-1 group-hover:text-gray-600' /> <p className='group-hover:text-black text-sm'>Managing Committi</p></Link>
+                                  <Link href={'/teachers-house-partners'} className='flex group '> <FaAngleRight className='text-black mr-2 pt-1 group-hover:text-gray-600' /> <p className='group-hover:text-black text-sm'>Teachers & House Partners</p></Link>
+                                  <Link href={'/founder'} className='flex group '> <FaAngleRight className='text-black mr-2 pt-1 group-hover:text-gray-600' /> <p className='group-hover:text-black text-sm'>Founder</p></Link>
+                                  <Link href={'/managing-committi'} className='flex group '> <FaAngleRight className='text-black mr-2 pt-1 group-hover:text-gray-600' /> <p className='group-hover:text-black text-sm'>Managing Committi</p></Link>
                               </div>
           
                           </div>

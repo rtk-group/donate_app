@@ -30,7 +30,7 @@ function Page() {
                     </div>
 
 
-                    <p className='text-xs text-gray-600 leading-5'>Shri Shikshayatan College has one NSS Unit with 100 volunteers operating since 2009. The unit works throughout the year doing various programmes. The students do regular activities in local NGOs, Little Sisters of the Poor, Society for Indian Children Welfare, Umeed, Tiljala Shed. A special camp is held every year to make some tangible change in the lives of the less privileged. Apart from this eye camp, menstraual hygiene camp are held every year in collaboration with NGOs. The students also organize various seminars on pertinent issues of environment and social importance. </p>
+                    <p className='text-xs text-gray-600 leading-5'>Shri Shikshayatan College has one NSS Unit with 100 volunteers operating since 2009. The unit works throughout the year doing various programmes. The students do regular activities in local NGOs, Little Sisters of the Poor, Society for Indian Children Welfare, Qadri Khair, Tiljala Shed. A special camp is held every year to make some tangible change in the lives of the less privileged. Apart from this eye camp, menstraual hygiene camp are held every year in collaboration with NGOs. The students also organize various seminars on pertinent issues of environment and social importance. </p>
                     <p className='text-xs text-gray-600 leading-5 mt-5'>They have been sending regular flow of volunteers for the personality development of our children.</p>
                     <div className='border w-50 md:w-xs mx-auto my-7'></div>
 
@@ -52,7 +52,7 @@ function Page() {
                     <div className='w-full md:max-w-90 flex flex-col lg:pr-4'>
                         <Image src='/assets/gallery2.jpg' alt='Gallery image 1' width={600} height={400} className='w-full h-full object-cover rounded-t-lg' />
                         <div className='py-7 px-10 shadow-[0_5px_25px_0_gray] rounded-b-lg'>
-                            <button className='text-gray-700 text-xs py-3 w-full bg-yellow-500 rounded-sm relative top-0 hover:-top-2 transition-all duration-400 cursor-pointer'>DONATE NOW</button>
+                           <Link href={'/donate-us'}> <button className='text-gray-700 text-xs py-3 w-full bg-yellow-500 rounded-sm relative top-0 hover:-top-2 transition-all duration-400 cursor-pointer'>DONATE NOW</button> </Link>
                         </div>
                     </div>
 

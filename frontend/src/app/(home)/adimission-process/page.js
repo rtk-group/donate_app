@@ -92,7 +92,7 @@ function Page() {
                     <p>Feel free to reach out to us at any time with any questions or concerns using the provided contact information </p>
                 </div>
 
-                <div className='flex'>
+                <div className='flex flex-col sm:flex-row'>
                     <span className='flex py-2 mt-2 items-center mr-10 sm:mr-45'>
                         <MdOutlineEmail className='text-yellow-500 text-2xl mr-3' />
                         <div className='leading-5'>
