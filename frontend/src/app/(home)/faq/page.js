@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link';
 import { IoMdArrowDropright } from "react-icons/io";
 import Locator from '../../../../components/locator';
 
@@ -105,7 +106,7 @@ function Page() {
                                     <div className='border border-white w-full md:max-w-80 my-8 px-2  flex flex-col  '>
                                         <Image src='/assets/gallery2.jpg' alt='Gallery image ' width={600} height={400} className='w-full h-full object-cover rounded-t-lg' />
                                         <div className='py-7 px-10 shadow-[0_5px_25px_0_gray] rounded-b-lg'>
-                                                <button className='text-xs py-3 w-full bg-yellow-500 rounded-sm relative top-0 hover:-top-2 transition-all duration-400 cursor-pointer'>DONATE NOW</button>
+                                                <Link href={'/donate-us'}> <button className='text-xs py-3 w-full bg-yellow-500 rounded-sm relative top-0 hover:-top-2 transition-all duration-400 cursor-pointer'>DONATE NOW</button> </Link>
                                         </div>
                                     </div>
                 

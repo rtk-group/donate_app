@@ -1,7 +1,7 @@
 "use client"
-
 import React from 'react'
-import Image from 'next/image'
+import Image from 'next/image';
+import Link from 'next/link';
 import Socialmediabox from '../../../../components/sociamediabox';
 import { IoIosArrowUp } from "react-icons/io";
 import Locator from '../../../../components/locator';
