@@ -192,6 +192,7 @@ export default function DonatePage() {
                 <option value=''>Your Country ?</option>
                 <option value='india'>India</option>
                 <option value='usa'>USA</option>
+                <option value='japan'>Japan</option>
                 <option value='russia'>Russia</option>
               </select>
             </div>
